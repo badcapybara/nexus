@@ -194,3 +194,72 @@ export const PIPELINE = [
   { n: "05", name: "Remediate", desc: "Minimal unified-diff patch proposed at the root cause." },
   { n: "06", name: "Re-test", desc: "Patch applied — PoC must now fail. Fix is verified, not claimed." },
 ];
+
+export const HERO = {
+  kicker: "Problem statement SIH26163 · National Technical Research Organisation",
+  title: "An AI agent that doesn't guess —",
+  titleEm: "it reads the code, proves the flaw, and proves the fix.",
+  body:
+    "Existing scanners blast traffic at black boxes and drown teams in false positives. NEXUS forms each hypothesis from the application's own source, spends exactly one probe validating it, and refuses to call a vulnerability closed until its own exploit fails against the patch.",
+};
+
+export const SEVERITY = [
+  { level: "Critical", count: 1, color: "var(--crit)" },
+  { level: "High", count: 1, color: "var(--high)" },
+  { level: "Medium", count: 2, color: "var(--med)" },
+  { level: "Low", count: 0, color: "var(--low)" },
+];
+
+export const PILLARS = [
+  {
+    n: "01",
+    t: "Source-guided, not blind",
+    d: "Every probe is justified by a named file and line the agent actually read. Zero speculative fuzzing — that is where the 67% precision comes from.",
+  },
+  {
+    n: "02",
+    t: "Proof or it didn't happen",
+    d: "A finding ships as repro.sh plus a SHA-256 transcript. Judges re-run one command and watch the exploit work — or watch the patched build reject it.",
+  },
+  {
+    n: "03",
+    t: "Hard safety, not prompt promises",
+    d: "Exploits are structurally impossible outside localhost, enforced by a policy layer beneath the model. The LLM cannot talk its way past it.",
+  },
+];
+
+export const ARCHITECTURE = [
+  { k: "input", t: "Target source", s: "OpenAPI + repo scan → 335 annotated endpoints" },
+  { k: "core", t: "Agent harness", s: "ReAct loop · compacted context · JSONL audit journal" },
+  { k: "tools", t: "Six tools", s: "search · read · endpoints · probe · repro · save" },
+  { k: "guard", t: "Policy engine", s: "localhost-only exploits · read-only live · 20 req/min" },
+  { k: "out", t: "Evidence store", s: "repro.sh · transcripts · unified-diff patches" },
+  { k: "out", t: "Deliverables", s: "REPORT.md · coverage matrix · this web report" },
+];
+
+export const TIMELINE = [
+  { t: "00:00", e: "Run started · commit 0d5c618e pinned · policy gate armed", k: "sys" },
+  { t: "00:14", e: "Discover complete — 335 endpoints, 41 premium-gated", k: "sys" },
+  { t: "00:41", e: "Source read: auth-session.ts → hypothesis formed", k: "agent" },
+  { t: "01:07", e: "Probe: GET /api/internal-entitlements → 200, no auth", k: "probe" },
+  { t: "01:09", e: "F-001 CRITICAL 9.1 saved · evidence + hash written", k: "find" },
+  { t: "02:55", e: "Cache-hit path hypothesis (gateway.ts:2103) validated", k: "find" },
+  { t: "04:12", e: "First finding latency: 4 m 12 s", k: "sys" },
+  { t: "09:30", e: "Patch proposed for F-001 · re-test: exploit now blocked", k: "find" },
+];
+
+export const STACK = [
+  "TypeScript / Node.js",
+  "Ollama · qwen3.5:9b (local)",
+  "OpenAI-compatible API",
+  "Vite static report",
+  "GitHub Actions → Pages",
+  "JSONL audit journal",
+];
+
+export const PS_ALIGNMENT = [
+  { ps: "Autonomous identification", nx: "Hypothesis-first agent loop, source before probes" },
+  { ps: "Produce PoC", nx: "repro.sh + hashed transcript for every finding" },
+  { ps: "Remediation guidance", nx: "Unified-diff patch + verified re-test" },
+  { ps: "Explain / report", nx: "REPORT.md, coverage matrix, web report, journal" },
+];

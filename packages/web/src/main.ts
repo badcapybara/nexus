@@ -1,8 +1,75 @@
 import "./style.css";
-import { RUN, STATS, BENCHMARK, FINDINGS, COVERAGE, PIPELINE, type MockFinding } from "./data";
+import {
+  RUN, STATS, BENCHMARK, FINDINGS, COVERAGE, PIPELINE,
+  HERO, SEVERITY, PILLARS, ARCHITECTURE, TIMELINE, STACK, PS_ALIGNMENT,
+  type MockFinding,
+} from "./data";
 
 const esc = (s: string) =>
   s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+function severityChart(): string {
+  const total = SEVERITY.reduce((a, s) => a + s.count, 0) || 1;
+  const rows = SEVERITY.map((s) => {
+    const pct = Math.round((s.count / total) * 100);
+    return `
+      <div class="sev-row">
+        <span class="sev-name">${s.level}</span>
+        <div class="sev-track"><div class="sev-fill" style="width:${s.count ? Math.max(pct, 8) : 0}%;background:${s.color}"></div></div>
+        <span class="sev-count num">${s.count}</span>
+      </div>`;
+  }).join("");
+  const angles = (() => {
+    let acc = 0;
+    return SEVERITY.filter((s) => s.count > 0)
+      .map((s) => {
+        const from = acc;
+        acc += (s.count / total) * 360;
+        return `${s.color} ${from}deg ${acc}deg`;
+      })
+      .join(", ");
+  })();
+  return `
+    <div class="sev-chart">
+      <div class="donut" style="background:conic-gradient(${angles})">
+        <div class="donut-hole"><span class="donut-n num">${total}</span><span class="donut-l">findings</span></div>
+      </div>
+      <div class="sev-rows">${rows}</div>
+    </div>`;
+}
+
+function benchBars(): string {
+  const bars: Record<string, number> = {
+    "Recall (seeded mutants)": (5 / 6) * 100,
+    Precision: 67,
+    "Time to first finding": 85,
+    "Held-out test · issue #5061": 100,
+  };
+  const rows = BENCHMARK.map(
+    (b) => `
+    <div class="bench-row">
+      <div class="bench-label">${esc(b.metric)}</div>
+      <div class="bench-track"><div class="bench-fill" style="width:${bars[b.metric] ?? 70}%"></div></div>
+      <div class="bench-value num">${esc(b.value)}</div>
+    </div>`
+  ).join("");
+  return `<div class="bench">${rows}</div>`;
+}
+
+function coverageDonut(): string {
+  const withFindings = COVERAGE.filter((c) => c.findings.length).length;
+  const total = COVERAGE.length;
+  const deg = (withFindings / total) * 360;
+  return `
+    <div class="cov-donut-wrap">
+      <div class="donut" style="background:conic-gradient(var(--navy) 0deg ${deg}deg, #e8e5dd ${deg}deg 360deg)">
+        <div class="donut-hole">
+          <span class="donut-n num">${withFindings}/${total}</span>
+          <span class="donut-l">scopes raised findings</span>
+        </div>
+      </div>
+    </div>`;
+}
 
 function findingCard(f: MockFinding): string {
   const sevClass = f.severity.level.toLowerCase();
@@ -31,13 +98,11 @@ function findingCard(f: MockFinding): string {
     </div>
     <div class="finding-body">
       <p style="color:var(--ink-2);font-size:14px">${esc(f.summary)}</p>
-
       <div class="block hypo">
         <div class="label" style="margin-bottom:2px">Hypothesis</div>
         <code>${esc(f.hypothesis.file)}</code>
         <p>${esc(f.hypothesis.reasoning)}</p>
       </div>
-
       <div class="grid2">
         <div class="block">
           <div class="label">Reproduction steps</div>
@@ -54,7 +119,6 @@ function findingCard(f: MockFinding): string {
           </div>
         </div>
       </div>
-
       <div class="grid2">
         <div class="block">
           <div class="label">Business impact</div>
@@ -75,8 +139,8 @@ function render(): string {
     (s) => `<div class="stat"><div class="v num">${s.value}</div><div class="l">${s.label}</div></div>`
   ).join("");
 
-  const benchRows = BENCHMARK.map(
-    (b) => `<tr><td>${esc(b.metric)}</td><td class="num" style="text-align:right;font-weight:600">${esc(b.value)}</td></tr>`
+  const pillars = PILLARS.map(
+    (p) => `<div class="pillar"><div class="pillar-n">${p.n}</div><div class="pillar-t">${esc(p.t)}</div><div class="pillar-d">${esc(p.d)}</div></div>`
   ).join("");
 
   const covRows = COVERAGE.map((c) => {
@@ -92,11 +156,35 @@ function render(): string {
     </tr>`;
   }).join("");
 
+  const psRows = PS_ALIGNMENT.map(
+    (p) => `<tr><td style="color:var(--muted);width:38%">${esc(p.ps)}</td><td><b>${esc(p.nx)}</b></td></tr>`
+  ).join("");
+
   const stages = PIPELINE.map(
     (p) => `<div class="stage"><div class="n">${p.n}</div><div class="s">${esc(p.name)}</div><div class="d">${esc(p.desc)}</div></div>`
   ).join("");
 
+  const arch = ARCHITECTURE.map(
+    (a, i) => `
+      <div class="arch-node ${a.k}">
+        ${i > 0 ? '<span class="arch-arrow">→</span>' : ""}
+        <div class="arch-t">${esc(a.t)}</div>
+        <div class="arch-s">${esc(a.s)}</div>
+      </div>`
+  ).join("");
+
+  const timeline = TIMELINE.map(
+    (t) => `
+      <div class="tl-row">
+        <span class="tl-t num">${t.t}</span>
+        <span class="tl-dot ${t.k}"></span>
+        <span class="tl-e">${esc(t.e)}</span>
+      </div>`
+  ).join("");
+
+  const stack = STACK.map((s) => `<span class="stack-chip">${esc(s)}</span>`).join("");
   const findings = FINDINGS.map(findingCard).join("");
+  const critHigh = FINDINGS.filter((f) => f.severity.score >= 7).length;
 
   return `
   <header class="masthead">
@@ -104,7 +192,7 @@ function render(): string {
       <div class="brandrow">
         <div>
           <div class="wordmark">NEX<span>US</span></div>
-          <div class="brand-sub">Autonomous security assessment · ${esc(RUN.target)} · ${esc(RUN.ps)}</div>
+          <div class="brand-sub">Autonomous security assessment · ${esc(RUN.target)}</div>
         </div>
         <div class="run-meta">
           <span>repo <b>${esc(RUN.repo)}</b></span>
@@ -125,52 +213,58 @@ function render(): string {
 
   <main>
     <section id="overview">
-      <div class="eyebrow">Executive summary</div>
-      <h2>Source-guided assessment, proven with re-tests</h2>
-      <p class="lede">
-        NEXUS reads the target's own source to form hypotheses, validates each with a single
-        targeted probe, and proves remediations by re-running the exploit against the patch.
-        Four findings were confirmed from 335 discovered endpoints; one has a verified fix.
-      </p>
-      <div class="stats">${stats}</div>
+      <div class="hero">
+        <div class="eyebrow">${esc(HERO.kicker)}</div>
+        <h1 class="hero-title">${esc(HERO.title)}<br><em>${esc(HERO.titleEm)}</em></h1>
+        <p class="hero-body">${esc(HERO.body)}</p>
+      </div>
+
+      <div class="stats stats6">${stats}</div>
+
       <div class="cols">
         <div class="panel">
-          <h3>Validation benchmark</h3>
-          <table class="data">
-            <thead><tr><th>Metric</th><th style="text-align:right">Result</th></tr></thead>
-            <tbody>${benchRows}</tbody>
-          </table>
+          <h3>Findings by severity</h3>
+          ${severityChart()}
         </div>
         <div class="panel">
-          <h3>Run parameters</h3>
-          <table class="data">
-            <tbody>
-              <tr><td style="color:var(--muted)">Target commit</td><td style="text-align:right;font-family:var(--mono)">${RUN.commit}</td></tr>
-              <tr><td style="color:var(--muted)">Endpoints discovered</td><td class="num" style="text-align:right;font-weight:600">335</td></tr>
-              <tr><td style="color:var(--muted)">Assessment classes</td><td class="num" style="text-align:right;font-weight:600">8</td></tr>
-              <tr><td style="color:var(--muted)">Exploit policy</td><td style="text-align:right">localhost PoC only</td></tr>
-            </tbody>
-          </table>
+          <h3>Validation benchmark</h3>
+          ${benchBars()}
+          <p class="fine">Seeded-mutant recall, precision on confirmed findings, held-out real issue #5061.</p>
         </div>
       </div>
+
+      <div class="pillars">${pillars}</div>
+
+      <div class="stack-strip">${stack}</div>
     </section>
 
     <section id="findings" hidden>
       <div class="eyebrow">Confirmed findings</div>
       <h2>Four issues, each with a reproducible proof</h2>
-      <p class="lede">Select a row to expand the hypothesis, evidence transcript, and re-test result.</p>
+      <p class="lede">Select a row to expand the hypothesis, evidence transcript, and re-test result.
+        <b>${critHigh} of ${FINDINGS.length}</b> rate high or above.</p>
       ${findings}
     </section>
 
     <section id="coverage" hidden>
       <div class="eyebrow">Assessment coverage</div>
       <h2>Eight problem scopes, mapped to evidence</h2>
-      <p class="lede">Every scope was exercised; scopes with a raised finding link directly to it.</p>
-      <div class="panel">
-        <table class="data">
-          <thead><tr><th>Scope</th><th>Status</th><th>Findings</th></tr></thead>
-          <tbody>${covRows}</tbody>
-        </table>
+      <p class="lede">Every scope from the evaluation problem statement was exercised; scopes with a raised finding link directly to it.</p>
+      <div class="cols">
+        <div class="panel">
+          <table class="data">
+            <thead><tr><th>Scope</th><th>Status</th><th>Findings</th></tr></thead>
+            <tbody>${covRows}</tbody>
+          </table>
+        </div>
+        <div class="panel">
+          <h3>Scope coverage</h3>
+          ${coverageDonut()}
+          <h3 style="margin-top:22px">Problem-statement alignment</h3>
+          <table class="data">
+            <tbody>${psRows}</tbody>
+          </table>
+        </div>
       </div>
     </section>
 
@@ -179,7 +273,19 @@ function render(): string {
       <h2>Six stages, one verified loop</h2>
       <p class="lede">The agent does not claim a fix until the re-test stage shows the exploit failing.</p>
       <div class="pipeline">${stages}</div>
-      <div class="panel">
+
+      <div class="cols">
+        <div class="panel">
+          <h3>Run timeline <span class="fine-inline">extract from audit journal</span></h3>
+          <div class="timeline">${timeline}</div>
+        </div>
+        <div class="panel">
+          <h3>Architecture</h3>
+          <div class="arch">${arch}</div>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:26px">
         <h3>Why this design holds up</h3>
         <table class="data">
           <tbody>
@@ -195,7 +301,7 @@ function render(): string {
 
   <footer>
     <div class="footer-inner">
-      <span>NEXUS · ${esc(RUN.ps)} · demo data for presentation</span>
+      <span>NEXUS · Team FROST · ${esc(RUN.ps)} · demo data for presentation</span>
       <span>${esc(RUN.policy)}</span>
     </div>
   </footer>`;
@@ -210,7 +316,11 @@ document.querySelectorAll<HTMLButtonElement>(".tab").forEach((btn) => {
     btn.classList.add("active");
     document.querySelectorAll<HTMLElement>("main section").forEach((s) => (s.hidden = true));
     const target = document.getElementById(btn.dataset.tab!);
-    if (target) target.hidden = false;
+    if (target) {
+      target.hidden = false;
+      target.classList.add("enter");
+      setTimeout(() => target.classList.remove("enter"), 400);
+    }
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
@@ -219,7 +329,6 @@ document.querySelectorAll<HTMLElement>(".finding-head").forEach((head) => {
   head.addEventListener("click", () => head.closest(".finding")?.classList.toggle("open"));
 });
 
-// Open the first finding by default when the Findings tab is shown first time.
 let openedOnce = false;
 document.querySelector('[data-tab="findings"]')?.addEventListener("click", () => {
   if (!openedOnce) {
