@@ -1,0 +1,25 @@
+{
+  "name": "nexus",
+  "private": true,
+  "version": "0.1.0",
+  "description": "NEXUS — source-guided autonomous security assessment agent (SIH26163)",
+  "type": "module",
+  "workspaces": [
+    "packages/core",
+    "packages/cli",
+    "packages/web"
+  ],
+  "scripts": {
+    "build": "npm run build -w @nexus/core && npm run build -w @nexus/cli && npm run build -w @nexus/web",
+    "dev": "npm run dev -w @nexus/web",
+    "typecheck": "tsc -b packages/core packages/cli",
+    "nexus": "node packages/cli/dist/index.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2"
+  }
+}

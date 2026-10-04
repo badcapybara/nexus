@@ -1,0 +1,14 @@
+{
+  "name": "@nexus/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": { "nexus": "dist/index.js" },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@nexus/core": "*",
+    "commander": "^12.1.0"
+  }
+}

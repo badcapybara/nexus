@@ -1,0 +1,14 @@
+{
+  "target": {
+    "name": "World Monitor",
+    "repoUrl": "https://github.com/koala73/worldmonitor",
+    "pinnedCommit": "0d5c618e4307414546a9be84a482ac06b7d56749",
+    "localBaseUrl": "http://localhost:3000",
+    "liveBaseUrl": "https://api.worldmonitor.app"
+  },
+  "policy": {
+    "allowLiveWrites": false,
+    "maxLiveRequestsPerMinute": 20,
+    "requireLocalForExploits": true
+  }
+}

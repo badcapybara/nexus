@@ -1,0 +1,2012 @@
+[
+  {
+    "method": "ANY",
+    "path": "/api/not-found",
+    "source": "route-scan",
+    "notes": "api/[...notfound].ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/bootstrap",
+    "source": "route-scan",
+    "notes": "api/_bootstrap-public-tier.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/md-twin",
+    "source": "route-scan",
+    "notes": "api/_md-url-twin.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/md-twin/",
+    "source": "route-scan",
+    "notes": "api/_md-url-twin.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/",
+    "source": "route-scan",
+    "notes": "api/_md-url-twin.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/wm-session",
+    "source": "route-scan",
+    "notes": "api/_usage-telemetry.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/oauth/token",
+    "source": "route-scan",
+    "notes": "api/_usage-telemetry.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/internal-validate-api-key",
+    "source": "route-scan",
+    "notes": "api/_user-api-key.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/internal-entitlements",
+    "source": "route-scan",
+    "notes": "api/_user-api-key.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/a2a",
+    "source": "route-scan",
+    "notes": "api/a2a.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/ask",
+    "source": "route-scan",
+    "notes": "api/ask.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/create-checkout",
+    "source": "route-scan",
+    "notes": "api/create-checkout.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/customer-portal",
+    "source": "route-scan",
+    "notes": "api/customer-portal.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/docs-mcp",
+    "source": "route-scan",
+    "notes": "api/docs-mcp.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/mcp",
+    "source": "route-scan",
+    "notes": "api/docs-mcp.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/embed/entitlement",
+    "source": "route-scan",
+    "notes": "api/embed/entitlement.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/embed/map-frame",
+    "source": "route-scan",
+    "notes": "api/embed/session.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/embed/session",
+    "source": "route-scan",
+    "notes": "api/embed/session.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/health",
+    "source": "route-scan",
+    "notes": "api/health.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/internal/mcp-grant-context",
+    "source": "route-scan",
+    "notes": "api/internal/mcp-grant-mint.ts"
+  },
+  {
+    "method": "POST",
+    "path": "/api/mcp",
+    "source": "route-scan",
+    "notes": "api/mcp/body-limits.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/search-sec-filings",
+    "source": "route-scan",
+    "notes": "api/mcp/registry/company-intel-tools.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/list-material-events",
+    "source": "route-scan",
+    "notes": "api/mcp/registry/company-intel-tools.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/list-company-signals",
+    "source": "route-scan",
+    "notes": "api/mcp/registry/company-intel-tools.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/get-company-enrichment",
+    "source": "route-scan",
+    "notes": "api/mcp/registry/company-intel-tools.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/scorecard/v1/get-five-factor-scorecard",
+    "source": "route-scan",
+    "notes": "api/mcp/registry/rpc-tools.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/scorecard/v1/get-bloc-scorecard",
+    "source": "route-scan",
+    "notes": "api/mcp/registry/rpc-tools.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/search-gdelt-documents",
+    "source": "route-scan",
+    "notes": "api/mcp/skill-extension/generated.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/resilience/v1/get-resilience-score",
+    "source": "route-scan",
+    "notes": "api/mcp/skill-extension/generated.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/resilience/v1/get-resilience-ranking",
+    "source": "route-scan",
+    "notes": "api/mcp/skill-extension/generated.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/mcp-proxy",
+    "source": "route-scan",
+    "notes": "api/mcp-proxy.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/...",
+    "source": "route-scan",
+    "notes": "api/not-found.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/notification-channels",
+    "source": "route-scan",
+    "notes": "api/notification-channels.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/notify",
+    "source": "route-scan",
+    "notes": "api/notify.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/reverse-geocode",
+    "source": "route-scan",
+    "notes": "api/reverse-geocode.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/scenario/v1/run-scenario",
+    "source": "route-scan",
+    "notes": "api/scenario/v1/run.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/scenario/v1/get-scenario-status",
+    "source": "route-scan",
+    "notes": "api/scenario/v1/status.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/scenario/v1/list-scenario-templates",
+    "source": "route-scan",
+    "notes": "api/scenario/v1/templates.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/product-catalog",
+    "source": "route-scan",
+    "notes": "api/seed-contract-probe.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/skills/fetch-agentskills",
+    "source": "route-scan",
+    "notes": "api/skills/fetch-agentskills.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-country-products",
+    "source": "route-scan",
+    "notes": "api/supply-chain/v1/country-products.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-multi-sector-cost-shock",
+    "source": "route-scan",
+    "notes": "api/supply-chain/v1/multi-sector-cost-shock.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/internal-revoke-pro-mcp-token",
+    "source": "route-scan",
+    "notes": "api/user/mcp-revoke.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/user-prefs",
+    "source": "route-scan",
+    "notes": "api/user-prefs.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/widget-agent",
+    "source": "route-scan",
+    "notes": "api/widget-agent.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/youtube/live",
+    "source": "route-scan",
+    "notes": "api/youtube/live.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/classify-event",
+    "source": "route-scan",
+    "notes": "server/_shared/direct-llm-quota.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/deduct-situation",
+    "source": "route-scan",
+    "notes": "server/_shared/direct-llm-quota.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/get-country-intel-brief",
+    "source": "route-scan",
+    "notes": "server/_shared/direct-llm-quota.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/analyze-stock",
+    "source": "route-scan",
+    "notes": "server/_shared/direct-llm-quota.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/news/v1/summarize-article",
+    "source": "route-scan",
+    "notes": "server/_shared/direct-llm-quota.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/chat-analyst",
+    "source": "route-scan",
+    "notes": "server/_shared/direct-llm-quota.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/forecast/v1/trigger-simulation",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/search-intel-history",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/get-intel-timeline",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/get-similar-events",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/get-stock-analysis-history",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/get-insider-transactions",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/backtest-stock",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/list-stored-stock-backtests",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/list-global-tenders",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/sanctions/v1/list-sanctions-pressure",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-country-chokepoint-index",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-bypass-options",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-country-cost-shock",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-route-explorer-lane",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-route-impact",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-sector-dependency",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/trade/v1/list-comtrade-flows",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/trade/v1/get-tariff-trends",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/resilience/v1/get-food-stocks",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/resilience/v1/get-demographics-capability",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/resilience/v1/get-resilience-indicators",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/scorecard/v1/list-five-factor-scorecards",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/get-physical-premiums",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/get-physical-divergence-index",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-mineral-production",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/military/v1/get-defense-industrial-base",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-country-vulnerabilities",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-chokepoint-dependencies",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/list-vulnerability-rankings",
+    "source": "route-scan",
+    "notes": "server/_shared/entitlement-check.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/company-monitoring/v1/import-monitored-company-batch",
+    "source": "route-scan",
+    "notes": "server/_shared/idempotency.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/internal-intel-search",
+    "source": "route-scan",
+    "notes": "server/_shared/intel-history-client.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/internal-intel-timeline",
+    "source": "route-scan",
+    "notes": "server/_shared/intel-history-client.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/v1/chat/completions",
+    "source": "route-scan",
+    "notes": "server/_shared/llm.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/internal-validate-pro-mcp-token",
+    "source": "route-scan",
+    "notes": "server/_shared/pro-mcp-token.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/aviation/v1/track-aircraft",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/aviation/v1/search-google-flights",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/aviation/v1/search-google-dates",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/aviation/v1/list-aviation-news",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/aviation/v1/get-youtube-live-stream-info",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/aviation/v1/search-flight-prices",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/news/v1/list-feed-digest",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/news/v1/summarize-article-cache",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/list-telegram-feed",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/conflict/v1/get-humanitarian-summary-batch",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/military/v1/get-aircraft-details",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/military/v1/get-aircraft-details-batch",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/webcam/v1/get-webcam-image",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/military/v1/get-wingbits-live-flight",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/imagery/v1/search-imagery",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/batch/v1/execute",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/sanctions/v1/lookup-sanction-entity",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/get-country-coverage",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/get-country-stock-index",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/list-stablecoin-markets",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/list-crypto-quotes",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/list-world-bank-indicators",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/list-market-quotes",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/company-monitoring/v1/create-monitored-company",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/company-monitoring/v1/update-monitored-company",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/company-monitoring/v1/set-monitored-company-state",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/leads/v1/submit-contact",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/leads/v1/register-interest",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/maritime/v1/get-vessel-snapshot",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/infrastructure/v1/reverse-geocode",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/aviation/v1/list-airport-delays",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-fred-series-batch",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/infrastructure/v1/record-baseline-snapshot",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/v2/shipping/webhooks",
+    "source": "route-scan",
+    "notes": "server/_shared/rate-limit.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/list-crypto-sectors",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/list-defi-tokens",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/list-ai-tokens",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/list-other-tokens",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/list-commodity-quotes",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/get-sector-summary",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/get-fear-greed-index",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/get-market-breadth-history",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/list-gulf-quotes",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/infrastructure/v1/list-service-statuses",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/seismology/v1/list-earthquakes",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/infrastructure/v1/list-internet-outages",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/infrastructure/v1/list-internet-ddos-attacks",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/infrastructure/v1/list-internet-traffic-anomalies",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/forecast/v1/get-forecast-scorecard",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/safety/v1/get-toronto-safety",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/unrest/v1/list-unrest-events",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/cyber/v1/list-cyber-threats",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/conflict/v1/list-acled-events",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/military/v1/get-theater-posture",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/infrastructure/v1/get-temporal-baseline",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/aviation/v1/get-airport-ops-summary",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/aviation/v1/list-airport-flights",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/aviation/v1/get-carrier-ops",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/aviation/v1/get-flight-status",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/natural/v1/list-natural-events",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/wildfire/v1/list-fire-detections",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/maritime/v1/list-navigational-warnings",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-china-corridor-control-towers",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-shipping-rates",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/list-pipelines",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-pipeline-detail",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/list-storage-facilities",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-storage-facility-detail",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/list-fuel-shortages",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-fuel-shortage-detail",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/list-energy-disruptions",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-fred-series",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-bls-series",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-energy-prices",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/research/v1/list-arxiv-papers",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/research/v1/list-trending-repos",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/giving/v1/get-giving-summary",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/get-china-decision-signals",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/get-gdelt-topic-timeline",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/climate/v1/list-climate-anomalies",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/climate/v1/list-climate-disasters",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/climate/v1/get-co2-monitoring",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/climate/v1/get-ocean-ice-data",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/climate/v1/list-air-quality-data",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/climate/v1/list-climate-news",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/radiation/v1/list-radiation-observations",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/thermal/v1/list-thermal-escalations",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/research/v1/list-tech-events",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/military/v1/get-usni-fleet-report",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/military/v1/list-defense-patents",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/conflict/v1/list-ucdp-events",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/conflict/v1/get-humanitarian-summary",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/conflict/v1/list-iran-events",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/displacement/v1/get-displacement-summary",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/displacement/v1/get-population-exposure",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-bis-policy-rates",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-bis-exchange-rates",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-bis-credit",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/trade/v1/get-trade-flows",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/trade/v1/get-trade-barriers",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/trade/v1/get-trade-restrictions",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/trade/v1/get-customs-revenue",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-energy-capacity",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/list-grocery-basket-prices",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/list-bigmac-prices",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/list-fuel-prices",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-fao-food-price-index",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-crude-inventories",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-nat-gas-storage",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-eu-yield-curve",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-us-cpi-monthly",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-us-treasury-par-yield-curve",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-us-interest-rates",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-world-cpi-monthly",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-government-yield-curve",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-critical-minerals",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/military/v1/get-wingbits-status",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/military/v1/list-military-flights",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/list-etf-flows",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/research/v1/list-hackernews-items",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/get-country-risk",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/get-risk-scores",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/get-pizzint-status",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/infrastructure/v1/get-cable-health",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/positive-events/v1/list-positive-geo-events",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/military/v1/list-military-bases",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-macro-signals",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-national-debt",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/prediction/v1/list-prediction-markets",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/forecast/v1/get-forecasts",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/forecast/v1/get-simulation-package",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/forecast/v1/get-simulation-outcome",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-chokepoint-status",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-chokepoint-history",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/news/v1/list-country-headlines",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/get-country-facts",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/list-security-advisories",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/list-satellites",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/list-gps-interference",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/list-cross-source-signals",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/list-oref-alerts",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/list-x-feed",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/infrastructure/v1/list-temporal-anomalies",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/infrastructure/v1/get-ip-geo",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/infrastructure/v1/get-bootstrap-data",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/webcam/v1/list-webcams",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/consumer-prices/v1/get-consumer-price-overview",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/consumer-prices/v1/get-consumer-price-basket-series",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/consumer-prices/v1/list-consumer-price-categories",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/consumer-prices/v1/list-consumer-price-movers",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/consumer-prices/v1/list-retailer-price-spreads",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/consumer-prices/v1/get-consumer-price-freshness",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/list-earnings-calendar",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/get-cot-positioning",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/get-gold-intelligence",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/market/v1/get-hyperliquid-flow",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-economic-calendar",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-china-macro-snapshot",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-china-activity-nowcast",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/list-market-implications",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/list-wsb-tickers",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-ecb-fx-rates",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-eurostat-country-data",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-eu-gas-storage",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-oil-stocks-analysis",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-oil-inventories",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-energy-crisis-policies",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-eu-fsi",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/economic/v1/get-economic-stress",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/v1/get-shipping-stress",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/health/v1/list-disease-outbreaks",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/health/v1/list-air-quality-alerts",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/get-social-velocity",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/get-country-energy-profile",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/compute-energy-shock",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/get-country-port-activity",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/get-regional-snapshot",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/get-regime-history",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/intelligence/v1/get-regional-brief",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/resilience/v1/get-runtime-manifest",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/v2/shipping/route-intelligence",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/company-monitoring/v1/get-company-coverage",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/company-monitoring/v1/get-company-material-event",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/company-monitoring/v1/get-company-monitoring-status",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/company-monitoring/v1/list-company-event-changes",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/company-monitoring/v1/list-company-event-impacts",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/company-monitoring/v1/list-monitored-companies",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "GET",
+    "path": "/api/intelligence/v1/classify-event",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "POST",
+    "path": "/api/intelligence/v1/deduct-situation",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "GET",
+    "path": "/api/intelligence/v1/get-country-intel-brief",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "GET",
+    "path": "/api/market/v1/analyze-stock",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "POST",
+    "path": "/api/news/v1/summarize-article",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/forecast/v1/get-forecast-scorecard.md",
+    "source": "route-scan",
+    "notes": "server/gateway.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/batch/",
+    "source": "route-scan",
+    "notes": "server/worldmonitor/batch/v1/execute-batch.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/internal-register-interest",
+    "source": "route-scan",
+    "notes": "server/worldmonitor/leads/v1/register-interest.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/oauth-protected-resource",
+    "source": "route-scan",
+    "notes": "workers/api-cors-preflight/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/security/report",
+    "source": "route-scan",
+    "notes": "workers/api-cors-preflight/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/geo",
+    "source": "route-scan",
+    "notes": "workers/api-cors-preflight/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/version",
+    "source": "route-scan",
+    "notes": "workers/api-cors-preflight/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/fwdstart",
+    "source": "route-scan",
+    "notes": "workers/api-cors-preflight/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/gpsjam",
+    "source": "route-scan",
+    "notes": "workers/api-cors-preflight/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/mcp/",
+    "source": "route-scan",
+    "notes": "workers/api-cors-preflight/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/oauth/",
+    "source": "route-scan",
+    "notes": "workers/api-cors-preflight/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/story",
+    "source": "route-scan",
+    "notes": "workers/api-cors-preflight/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/v1/mutation/acquire",
+    "source": "route-scan",
+    "notes": "workers/railway-reconcile-control/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/v1/mutation/prepare",
+    "source": "route-scan",
+    "notes": "workers/railway-reconcile-control/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/v1/mutation/assert",
+    "source": "route-scan",
+    "notes": "workers/railway-reconcile-control/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/v1/mutation/start",
+    "source": "route-scan",
+    "notes": "workers/railway-reconcile-control/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/v1/mutation/bind-result",
+    "source": "route-scan",
+    "notes": "workers/railway-reconcile-control/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/v1/mutation/release",
+    "source": "route-scan",
+    "notes": "workers/railway-reconcile-control/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/v1/mutation/abort",
+    "source": "route-scan",
+    "notes": "workers/railway-reconcile-control/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/v1/verifier/accept",
+    "source": "route-scan",
+    "notes": "workers/railway-reconcile-control/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/v1/verifier/fail",
+    "source": "route-scan",
+    "notes": "workers/railway-reconcile-control/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/v1/watchdog/status",
+    "source": "route-scan",
+    "notes": "workers/railway-reconcile-control/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/v1/watchdog/dispatch-hold",
+    "source": "route-scan",
+    "notes": "workers/railway-reconcile-control/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/v1/watchdog/bind-run",
+    "source": "route-scan",
+    "notes": "workers/railway-reconcile-control/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/v1/watchdog/dispatch-rejected",
+    "source": "route-scan",
+    "notes": "workers/railway-reconcile-control/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/v1/operator/resolve",
+    "source": "route-scan",
+    "notes": "workers/railway-reconcile-control/src/index.js"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/send",
+    "source": "route-scan",
+    "notes": "src/bootstrap/sentry-init.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/latest-brief",
+    "source": "route-scan",
+    "notes": "src/components/LatestBriefPanel.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/llm-health",
+    "source": "route-scan",
+    "notes": "src/components/LlmStatusIndicator.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/download",
+    "source": "route-scan",
+    "notes": "src/config/variant.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/internal/mcp-grant-mint",
+    "source": "route-scan",
+    "notes": "src/mcp-grant-main.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/analytics-health",
+    "source": "route-scan",
+    "notes": "src/services/analytics-collector-transport.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/invalidate-user-api-key-cache",
+    "source": "route-scan",
+    "notes": "src/services/api-keys.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/youtube-embed",
+    "source": "route-scan",
+    "notes": "src/services/desktop-readiness.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/risk-scores",
+    "source": "route-scan",
+    "notes": "src/services/desktop-readiness.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/supply-chain/hormuz-tracker",
+    "source": "route-scan",
+    "notes": "src/services/hormuz-tracker.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/user/mcp-revoke",
+    "source": "route-scan",
+    "notes": "src/services/mcp-clients.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/user/mcp-quota",
+    "source": "route-scan",
+    "notes": "src/services/mcp-clients.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/opensky",
+    "source": "route-scan",
+    "notes": "src/services/military-flights.ts"
+  },
+  {
+    "method": "POST",
+    "path": "/api/slack/oauth/start",
+    "source": "route-scan",
+    "notes": "src/services/notification-channels.ts"
+  },
+  {
+    "method": "POST",
+    "path": "/api/discord/oauth/start",
+    "source": "route-scan",
+    "notes": "src/services/notification-channels.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/tags",
+    "source": "route-scan",
+    "notes": "src/services/ollama-models.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/v1/models",
+    "source": "route-scan",
+    "notes": "src/services/ollama-models.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/user/passkey-offer",
+    "source": "route-scan",
+    "notes": "src/services/passkey-offer-reservation.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/referral/me",
+    "source": "route-scan",
+    "notes": "src/services/referral.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/local-",
+    "source": "route-scan",
+    "notes": "src/services/runtime.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/register-interest",
+    "source": "route-scan",
+    "notes": "src/services/runtime.ts"
+  },
+  {
+    "method": "GET",
+    "path": "/api/bootstrap",
+    "source": "route-scan",
+    "notes": "src/services/wm-session.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/local-debug-toggle",
+    "source": "route-scan",
+    "notes": "src/settings-main.ts"
+  },
+  {
+    "method": "POST",
+    "path": "/api/local-debug-toggle",
+    "source": "route-scan",
+    "notes": "src/settings-main.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/local-traffic-log",
+    "source": "route-scan",
+    "notes": "src/settings-main.ts"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/local-traffic-log",
+    "source": "route-scan",
+    "notes": "src/settings-main.ts"
+  },
+  {
+    "method": "GET",
+    "path": "/api/widget-agent",
+    "source": "route-scan",
+    "notes": "src/utils/proxy.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/telegram-pair-callback",
+    "source": "route-scan",
+    "notes": "convex/http.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/internal-get-key-owner",
+    "source": "route-scan",
+    "notes": "convex/http.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/internal-validate-embed-key",
+    "source": "route-scan",
+    "notes": "convex/http.ts"
+  },
+  {
+    "method": "ANY",
+    "path": "/api/internal-issue-pro-mcp-token",
+    "source": "route-scan",
+    "notes": "convex/http.ts"
+  }
+]
